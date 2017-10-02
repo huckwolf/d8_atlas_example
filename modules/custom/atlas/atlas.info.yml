@@ -1,0 +1,11 @@
+name: 'ATLAS'
+type: module
+description: 'Build a Drupal 8 single page application that uses data provided from the [ATDW Atlas API](http://developer.atdw.com.au/ATLAS/API/) to list accommodation options in New South Wales.'
+package: Development
+# core: 8.x
+dependencies:
+
+# Information added by Drupal.org packaging script on 2017-03-07
+version: '8.x-1.0'
+core: '8.x'
+project: 'huck'

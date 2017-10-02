@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * hook_theme
+ *
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ *
+ * @return array
+ */
+function atlas_theme($existing, $type, $theme, $path) {
+  return [
+    'property_list' => [
+      'variables' => ['properties' => false],
+    ],
+  ];
+}

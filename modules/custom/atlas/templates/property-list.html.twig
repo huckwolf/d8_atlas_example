@@ -1,0 +1,16 @@
+{% if properties and properties['numberOfResults']  != 0  %}
+    <p>Number of result is: {{ properties['numberOfResults'] }}</p>
+    {% for property in properties['products'] %}
+        <div>
+            <h2>{{ property['productName'] }}</h2>
+            <p><b>Address:</b> {{ property.addresses.address_line }}
+                {% for address in property['addresses'] %}
+                    {{ address['address_line'] }} {{ address['city'] }} {{ address['state'] }} {{ address['postcode'] }} {{ address['country'] }}
+                {% endfor %}
+            </p>
+            <p>{{ property['productDescription'] }}</p>
+        </div>
+    {% endfor %}
+{% else %}
+    There are currently no results been returned, please try other key words
+{% endif %}

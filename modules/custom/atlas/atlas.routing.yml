@@ -1,0 +1,7 @@
+atlas.search_atlas:
+  path: '/atlas/search'
+  defaults:
+    _controller: '\Drupal\atlas\Controller\AtlasController::searchAtlas'
+    _title:      'Atlas Property Search'
+  requirements:
+    _permission: 'access content'
